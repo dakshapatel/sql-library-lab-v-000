@@ -19,7 +19,7 @@ end
 
 def select_name_and_series_subgenres_of_authors
   "SELECT DISTINCT authors, subgenres.name
-  FROM authors
+  FROM author
   JOIN series
   ON author.id = series.authors_id
   JOIN subgenres
