@@ -21,7 +21,7 @@ def select_name_and_series_subgenres_of_authors
   "SELECT DISTINCT authors.name, subgenres.name
   FROM authors
   JOIN series
-  ON author.id = series.author_id
+  ON authors.id = series.author_id
   JOIN subgenres
   ON series.subgenre_id = subgenre_id LIMIT 2;"
 end
